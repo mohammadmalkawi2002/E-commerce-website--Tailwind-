@@ -4,11 +4,14 @@
     --color-primary-black: #000000;
     --color-primary-white: #FFFFFF;
     --color-Secondary-Charcoal: #2E2E2E;
+    --color-hero-bg: #211C24;
+    --color-paragraph: #909090;
     --font-Inter: 'Inter';
     --color-link: #989898;
     --color-search-bg: #F5F5F5;
     --color-search-text: #F5F5F5;
-
+    --color-banner-item-bg: #EDEDED;
+    --color-banner-Vision-item-bg: #353535;
 
 }
 
@@ -63,7 +66,7 @@
     }
 
     .container {
-        @apply mx-auto px-4 sm:px-6 lg:px-0;
+        @apply mx-auto w-full px-4 sm:px-6 lg:px-0;
 
     }
 }
@@ -78,5 +81,11 @@
 
     &:hover {
         @apply text-primary-black;
+    }
+}
+
+@layer components {
+    .button {
+        @apply inline-flex items-center justify-center gap-2 px-14 py-4 rounded-md border border-primary-white text-[16px] font-medium leading-6 text-primary-white transition-all duration-200 hover:bg-primary-white hover:text-hero-bg;
     }
 }
