@@ -98,21 +98,11 @@
     </header>
 
 
-
-
-
-
-
-
-
-
-
-
     <main>
         <section class="hero bg-hero-bg  h-[calc(100vh - 84px)]">
             <div
                 class="container py-22 flex-col gap-12  row justify-between  text-center  lg:flex-row lg:gap-0 lg:text-left  lg:py-0  h-full">
-                <div class="content gap-4  flex flex-col lg:gap-6  items-center lg:items-start ">
+                <div class="content gap-4  row flex-col lg:gap-6   lg:items-start ">
                     <span class="text-[24px] font-semibold text-primary-white opacity-40  leading-8 ">Pro.Beyond.</span>
                     <h1
                         class=" text-[72px]  font-thin lg:text-[96px] text-primary-white  leading-18 lg:leading-24 tracking-normal">
@@ -142,8 +132,50 @@
             </div>
         </section>
 
-     
 
+
+        <section class="categories bg-[#FAFAFA] py-16 lg:py-20">
+            <div class="container">
+                <div class="top row justify-between mb-8">
+                    <h3 class="leading-8 font-medium">Browse By Category</h3>
+                    <div class="imgs row gap-4">
+                        <button class="slider-prev " aria-label="Previous categories">
+                            <img src="./assets/imgs/category_Section/LeftArrow.svg" alt="">
+                        </button>
+                        <button class="slider-next " aria-label="Next categories">
+                            <img src="./assets/imgs/category_Section/RightArrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="items grid grid-cols-2  lg:grid-cols-6 gap-4 lg:gap-8">
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Phones.png" alt="Phones category">
+                        <h5>Phones</h5>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Smart Watches.png" alt="Smart Watches category">
+                        <h5>Smart Watches</h5>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Cameras.png" alt="Cameras category">
+                        <h5>Cameras</h5>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Headphones.png" alt="Headphones category">
+                        <h5>Headphones</h5>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Computers.png" alt="Computers category">
+                        <h5>Computers</h5>
+                    </div>
+                    <div class="category-card">
+                        <img src="./assets/imgs/category_Section/Gaming.png" alt="Gaming category">
+                        <h5>Gaming</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
