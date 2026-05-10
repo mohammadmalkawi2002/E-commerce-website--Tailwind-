@@ -105,7 +105,7 @@
 
 
     .product-card {
-        @apply row flex-col gap-2  lg:gap-4 justify-center px-4 py-6 bg-product-card-background rounded-[9px] text-center;
+        @apply h-full row flex-col gap-2 px-3 py-6 lg:gap-4 lg:px-4 bg-product-card-background rounded-[9px];
     }
 
     .tags-link {
@@ -113,6 +113,6 @@
     }
 
     .product-button {
-        @apply  inline-flex items-center justify-center rounded-lg bg-primary-black px-16 py-3 text-sm font-medium leading-6 text-primary-white transition-all duration-200 hover:bg-Secondary-Charcoal/60;
+        @apply mt-auto inline-flex items-center justify-center rounded-lg bg-primary-black px-9.75 lg:px-16 py-3 text-sm font-medium leading-6 text-primary-white transition-all duration-200 hover:bg-Secondary-Charcoal/60;
     }
 }
