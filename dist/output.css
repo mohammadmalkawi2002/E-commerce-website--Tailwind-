@@ -205,11 +205,20 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
   .top-5\.5 {
     top: calc(var(--spacing) * 5.5);
+  }
+  .top-22 {
+    top: calc(var(--spacing) * 22);
   }
   .top-22\.5 {
     top: calc(var(--spacing) * 22.5);
@@ -244,6 +253,9 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-\[32px\] {
+    margin-bottom: 32px;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -276,6 +288,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .size-10 {
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
@@ -304,24 +319,39 @@
   .max-w-full {
     max-width: 100%;
   }
+  .min-w-59 {
+    min-width: calc(var(--spacing) * 59);
+  }
   .min-w-59\.75 {
     min-width: calc(var(--spacing) * 59.75);
   }
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .translate-y-\[-50\%\] {
     --tw-translate-y: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .resize {
+    resize: both;
   }
   .auto-rows-fr {
     grid-auto-rows: minmax(0, 1fr);
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -365,11 +395,18 @@
   .gap-13 {
     gap: calc(var(--spacing) * 13);
   }
+  .gap-\[32px\] {
+    gap: 32px;
+  }
   .scroll-smooth {
     scroll-behavior: smooth;
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .tag-active {
     border-bottom-style: var(--tw-border-style);
@@ -417,6 +454,12 @@
   }
   .py-\[16px\] {
     padding-block: 16px;
+  }
+  .py-\[56px\] {
+    padding-block: 56px;
+  }
+  .py-\[80px\] {
+    padding-block: 80px;
   }
   .pt-\[22px\] {
     padding-top: 22px;
@@ -468,6 +511,10 @@
     --tw-leading: 24.8px;
     line-height: 24.8px;
   }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -502,12 +549,19 @@
   .text-primary-white {
     color: var(--color-primary-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-40 {
     opacity: 40%;
   }
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -535,6 +589,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .md\:py-4 {
@@ -621,6 +680,11 @@
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:py-\[80px\] {
+    @media (width >= 64rem) {
+      padding-block: 80px;
     }
   }
   .lg\:text-left {
@@ -995,6 +1059,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1073,6 +1142,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
