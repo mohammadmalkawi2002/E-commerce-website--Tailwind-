@@ -19,6 +19,7 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-thin: 100;
     --font-weight-light: 300;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -250,6 +251,12 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -259,22 +266,6 @@
   .row {
     display: flex;
     align-items: center;
-  }
-  .nav-link {
-    display: inline-block;
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-link);
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 200ms;
-    transition-duration: 200ms;
-    &:hover {
-      color: var(--color-primary-black);
-    }
   }
   .block {
     display: block;
@@ -310,8 +301,14 @@
   .max-w-79 {
     max-width: calc(var(--spacing) * 79);
   }
+  .max-w-85 {
+    max-width: calc(var(--spacing) * 85);
+  }
   .max-w-140 {
     max-width: calc(var(--spacing) * 140);
+  }
+  .max-w-\[340px\] {
+    max-width: 340px;
   }
   .max-w-\[372px\] {
     max-width: 372px;
@@ -349,9 +346,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -395,9 +389,6 @@
   .gap-13 {
     gap: calc(var(--spacing) * 13);
   }
-  .gap-\[32px\] {
-    gap: 32px;
-  }
   .scroll-smooth {
     scroll-behavior: smooth;
   }
@@ -434,11 +425,17 @@
   .bg-search-bg {
     background-color: var(--color-search-bg);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .px-\[40px\] {
     padding-inline: 40px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -449,23 +446,53 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-22 {
     padding-block: calc(var(--spacing) * 22);
+  }
+  .py-26 {
+    padding-block: calc(var(--spacing) * 26);
+  }
+  .py-\[1\] {
+    padding-block: 1;
+  }
+  .py-\[10\] {
+    padding-block: 10;
   }
   .py-\[16px\] {
     padding-block: 16px;
   }
-  .py-\[56px\] {
-    padding-block: 56px;
+  .py-\[100\] {
+    padding-block: 100;
   }
-  .py-\[80px\] {
-    padding-block: 80px;
+  .py-\[100px\] {
+    padding-block: 100px;
+  }
+  .py-\[104px\] {
+    padding-block: 104px;
   }
   .pt-\[22px\] {
     padding-top: 22px;
   }
   .text-center {
     text-align: center;
+  }
+  .nav-link {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-link);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+    &:hover {
+      color: var(--color-primary-black);
+    }
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -479,11 +506,17 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
   .text-\[24px\] {
     font-size: 24px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
   }
   .text-\[64px\] {
     font-size: 64px;
@@ -527,6 +560,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -542,6 +579,9 @@
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
+  }
+  .text-\[\#787878\] {
+    color: #787878;
   }
   .text-paragraph {
     color: var(--color-paragraph);
@@ -581,6 +621,11 @@
       display: none;
     }
   }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -599,6 +644,11 @@
   .md\:py-4 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:text-\[72px\] {
+    @media (width >= 48rem) {
+      font-size: 72px;
     }
   }
   .lg\:row {
@@ -677,14 +727,14 @@
       padding-block: calc(var(--spacing) * 0);
     }
   }
+  .lg\:py-14 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 14);
+    }
+  }
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:py-\[80px\] {
-    @media (width >= 64rem) {
-      padding-block: 80px;
     }
   }
   .lg\:text-left {
@@ -957,14 +1007,12 @@
   .banner-dot.is-active {
     background-color: var(--color-primary-black);
   }
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
+  .big-sale {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/imgs/banners/Banner-2-bg-only.png');
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -985,6 +1033,14 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-leading {
   syntax: "*";
@@ -1120,12 +1176,12 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-font-weight: initial;
-      --tw-duration: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-duration: initial;
       --tw-leading: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
