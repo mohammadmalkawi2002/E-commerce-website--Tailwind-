@@ -89,6 +89,10 @@
     }
 }
 
+
+@utility footer-link{
+    @apply text-[#CFCFCF] text-[14px] font-normal    transition-colors duration-300 hover:text-white;
+}
 @utility tag-active {
     @apply text-black font-medium border-b-2 border-black;
 }
