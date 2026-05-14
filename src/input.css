@@ -122,7 +122,9 @@
         @apply mt-auto inline-flex items-center justify-center rounded-lg bg-primary-black px-9.75 lg:px-16 py-3 text-sm font-medium leading-6 text-primary-white transition-all duration-200 hover:bg-Secondary-Charcoal/60;
     }
 
-
+.product-button-white-bg{
+    @apply  border border-[#C4C7C7] bg-white text-primary-black hover:bg-Secondary-Charcoal/60;
+}
 
 
     .banner-card {
