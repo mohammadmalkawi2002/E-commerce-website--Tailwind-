@@ -118,7 +118,384 @@
             </div>
         </nav>
 
-     
+        <section class="content pb-14">
+            <div class="container   grid grid-cols-[260px_1fr] gap-8 items-start">
+                <aside class="filters">
+
+
+                    <section class="filter-section py-4">
+
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Brand</span>
+
+                            <img src="./assets/imgs/UpArrow.svg" alt="UpArrow">
+                        </button>
+
+                        <div class=" search-brands flex flex-col gap-4 pt-4 ">
+                            <!-- checkboxes -->
+
+                            <div class="filter-brand-search relative w-full ">
+                                <img src="./assets/imgs/header/Vector.svg" alt="vector_search"
+                                    class="absolute top-1/2 left-4 -translate-y-1/2 ">
+                                <input type="search" name="Search brands" placeholder="Search"
+                                    class="w-full px-4 py-2 rounded-lg bg-search-bg text-sm text-primary-black font-medium leading-4.5 placeholder:text-[#656565]">
+                            </div>
+
+                            <ul class="flex  flex-col gap-2">
+                                <li>
+
+
+                                    </label>
+                                    <input type="checkbox" name="brand" value="apple" checked>
+                                    <span>Apple</span>
+                                    <span class="filter-count">110</span>
+                                </li>
+                                <li>
+                                    <label class="filter-option"></label>
+                                    <input type="checkbox" name="brand" value="samsung">
+                                    <span>Samsung</span>
+                                    <span class="filter-count">95</span>
+                                </li>
+                                <li>
+                                    <label class="filter-option"></label>
+                                    <input type="checkbox" name="brand" value="xiaomi">
+                                    <span>Xiaomi</span>
+                                    <span class="filter-count">82</span>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="poco">
+                                        <span>Poco</span>
+                                        <span class="filter-count">78</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="oppo">
+                                        <span>OPPO</span>
+                                        <span class="filter-count">64</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="honor">
+                                        <span>Honor</span>
+                                        <span class="filter-count">56</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="motorola">
+                                        <span>Motorola</span>
+                                        <span class="filter-count">48</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="nokia">
+                                        <span>Nokia</span>
+                                        <span class="filter-count">34</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="brand" value="realme">
+                                        <span>Realme</span>
+                                        <span class="filter-count">28</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                    <section class="filter-section  py-4">
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Battery capacity</span>
+                            <img src="./assets/imgs/Arrowdown.svg" alt="" srcset="">
+                        </button>
+
+
+                    </section>
+
+
+                    <section class="filter-section">
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Screen type</span>
+                            <img src="./assets/imgs/Arrowdown.svg" alt="" srcset="">
+                        </button>
+
+
+                    </section>
+
+
+                    <section class="filter-section">
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Screen diagonal</span>
+                            <img src="./assets/imgs/Arrowdown.svg" alt="" srcset="">
+                        </button>
+
+
+                    </section>
+
+
+                    <section class="filter-section">
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Protection class</span>
+                            <img src="./assets/imgs/Arrowdown.svg" alt="" srcset="">
+                        </button>
+
+
+                    </section>
+
+
+                    <section class="filter-section">
+                        <button type="button"
+                            class="flex w-full items-center justify-between border-b border-[#B5B5B5] py-3">
+                            <span>Built-in memory</span>
+                            <img src="./assets/imgs/Arrowdown.svg" alt="" srcset="">
+                        </button>
+
+
+                    </section>
+
+
+
+                </aside>
+
+                <div class="product flex w-full flex-col gap-10 items-center">
+
+                  
+
+                        <div class="products">
+                            <div class="top-part mb-4 flex flex-wrap items-center justify-between gap-3">
+                                <p class="text-[20px] font-medium text-[#6C6C6C]">
+                                    Selected Products: <span class="text-primary-black font-semibold">85</span>
+                                </p>
+                                <button type="button"
+                                    class="flex min-w-[220px] items-center justify-between rounded-lg border border-[#D4D4D4] px-4 py-3 text-sm text-primary-black">
+                                    <span>By rating</span>
+                                    <img src="./assets/imgs/Arrowdown.svg" alt="" aria-hidden="true">
+                                </button>
+                            </div>
+
+
+                            <div class="products-cards-group grid grid-cols-3 gap-4">
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-card ">
+                                    <div class="w-full flex justify-end">
+                                        <button class="like  ">
+                                            <img src="./assets/imgs/products/Like.svg" alt="Like">
+
+                                        </button>
+                                    </div>
+
+
+                                    <div class="product-img ">
+                                        <img src="./assets/imgs/products/Iphone 14 pro 1.png" alt="Iphone14 pro"
+                                            class="max-w-full  ">
+
+                                    </div>
+                                    <div class="content  flex  flex-col flex-1  gap-4 text-center ">
+                                        <h5>Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                                        <span class="text-2xl font-semibold leading-6 ">$900</span>
+
+                                        <a href="http://" class="product-button">Buy Now</a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+                        <nav class="pagination">
+
+                            <div class="flex items-center gap-4">
+                                <button type="button">
+                                    <img src="./assets/imgs/previous.svg" alt="Previous">
+                                </button>
+
+                                <ul class="flex items-center gap-2">
+
+                                    <li class="bg-product-card-background px-2.75 py-1 rounded-[5px]">
+                                        <button type="button"
+                                            class="text-[16px] font-medium leading-[24px] tracking-[3%]">
+                                            1
+                                        </button>
+                                    </li>
+                                    <li class="bg-product-card-background px-2.75 py-1 rounded-[5px]">
+                                        <button type="button"
+                                            class="text-[16px] font-medium leading-[24px] tracking-[3%] ">
+                                            2
+                                        </button>
+                                    </li>
+
+                                    <li class="bg-product-card-background px-2.75 py-1 rounded-[5px]">
+                                        <button type="button"
+                                            class="text-[16px] font-medium leading-[24px] tracking-[3%]">
+                                            3
+                                        </button>
+                                    </li>
+
+                                    <!-- Dots -->
+                                    <li class="flex  gap-[3px]">
+
+                                        <span class="bg-[#737373] rounded-full w-[3px] h-[3px] ">
+
+                                        </span>
+                                        <span class="bg-[#737373] rounded-full w-[3px] h-[3px] ">
+
+                                        </span>
+
+                                        <span class="bg-[#737373] rounded-full w-[3px] h-[3px] ">
+
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="bg-product-card-background px-2.75 py-1 rounded-[5px]">
+                                        <button type="button"
+                                            class="text-[16px] font-medium leading-[24px] tracking-[3%]">
+                                            12
+                                        </button>
+                                    </li>
+
+
+
+
+                                </ul>
+
+                                <button type="button">
+                                    <img src="./assets/imgs/next.png" alt="Next">
+                                </button>
+                            </div>
+
+                        </nav>
+
+
+                    </div>
+                </div>
+        </section>
     </main>
 
 
