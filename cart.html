@@ -95,8 +95,200 @@
 
 
     </header>
-    <main>
 
+    <main>
+        <section class="shopping-cart py-8 lg:py-28 ">
+            <div class="container grid grid-cols-1 lg:grid-cols-2  gap-10 lg:gap-12">
+                <div class="left-side grid grid-cols-1 gap-10 lg:mb-25">
+                    <h3 class="leading-6">Shopping Cart</h3>
+                    <div class="products  rounded-[15px]  flex flex-col gap-10">
+                        <div class="cart-product ">
+                            <div class="product-image ">
+                                <img src="./assets/imgs/products/Iphone 14 pro 1.png" class="max-w-[90px] max-h-[90px]"
+                                    alt="Product 1">
+                            </div>
+                            <div
+                                class="product-content flex-1 flex  flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
+                                <div class="info flex flex-col gap-2 ">
+                                    <p class="font-medium leading-6 max-w-full lg:max-w-47.75 ">Apple iPhone 14 Pro Max
+                                        128Gb Deep
+                                        Purple</p>
+                                    <span class="text-sm font-normal leading-6">#25139526913984</span>
+                                </div>
+
+                                <div class="right-side  flex w-full  gap-6 items-center lg:w-auto   ">
+                                    <div class="counter flex  gap-2">
+                                        <button type="button" class="decrease w-[24px] h-[24px]  ">
+                                            -
+                                        </button>
+
+                                        <input type=" number" value="1" min="1"
+                                            class="quantity rounded-[4px] w-[40px] h-[32px] py-2 px-4 border-[0.5px] border-[#D9D9D9] ">
+
+                                        <button type="button" class="increase w-[24px] h-[24px] ">
+                                            +
+                                        </button>
+                                    </div>
+
+                                    <span class="price text-[20px] font-medium leading-8 tracking-[3%]">$1399</span>
+                                    <button class="remove">
+                                        <img src="./assets/imgs/cart/Close.svg" class="max-w-none" alt="Remove">
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="cart-product ">
+                            <div class="product-image ">
+                                <img src="./assets/imgs/products/AirpodMax.png" class="max-w-[90px] max-h-[90px]"
+                                    alt="Product 1">
+                            </div>
+                            <div
+                                class="product-content  flex-1 flex  flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between ">
+                                <div class="info flex flex-col gap-2 ">
+                                    <p class="font-medium leading-6 max-w-full lg:max-w-47.75 ">AirPods Max Silver</p>
+                                    <span class="text-sm font-normal leading-6">#53459358345</span>
+                                </div>
+
+                                <div class="right-side  flex w-full  gap-6 items-center lg:w-auto ">
+                                    <div class="counter flex  gap-2">
+                                        <button type="button" class="decrease w-6 h-6  ">
+                                            -
+                                        </button>
+
+                                        <input type=" number" value="1" min="1"
+                                            class="quantity rounded-sm w-10 h-8 py-2 px-4 border-[0.5px] border-[#D9D9D9] ">
+
+                                        <button type="button" class="increase w-6 h-6 ">
+                                            +
+                                        </button>
+                                    </div>
+
+                                    <span class="price text-[20px] font-medium leading-8 tracking-[3%]"> $549</span>
+                                    <button class="remove">
+                                        <img src="./assets/imgs/cart/Close.svg" class="max-w-none" alt="Remove">
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cart-product ">
+                            <div class="product-image ">
+                                <img src="./assets/imgs/products/Apple_SmartWatch.png" class="max-w-[90px] max-h-[90px]"
+                                    alt="Product 1">
+                            </div>
+                            <div
+                                class="product-content flex-1 flex  flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between">
+                                <div class="info flex flex-col gap-2 ">
+                                    <p class="font-medium leading-6 max-w-full lg:max-w-47.75 ">Apple Watch Series 9 GPS
+                                        41mm
+                                        Starlight Aluminium </p>
+                                    <span class="text-sm font-normal leading-6">#63632324</span>
+                                </div>
+
+                                <div class="right-side  flex w-full  gap-6 items-center lg:w-auto ">
+                                    <div class="counter flex  gap-2">
+                                        <button type="button" class="decrease w-[24px] h-[24px]  ">
+                                            -
+                                        </button>
+
+                                        <input type=" number" value="1" min="1"
+                                            class="quantity rounded-[4px] w-[40px] h-[32px] py-2 px-4 border-[0.5px] border-[#D9D9D9] ">
+
+                                        <button type="button" class="increase w-[24px] h-[24px] ">
+                                            +
+                                        </button>
+                                    </div>
+
+                                    <span class="price text-[20px] font-medium leading-8 tracking-[3%]">$399</span>
+                                    <button class="remove">
+                                        <img src="./assets/imgs/cart/Close.svg" class="max-w-none" alt="Remove">
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div
+                    class="summary  flex flex-col gap-10 border border-[#EBEBEB] rounded-[10px] shadow-sm py-14 px-4 lg:px-16">
+                    <h4 class="font-bold leading-4">Order Summary</h4>
+
+                    <div class="summary-content flex flex-col gap-12">
+                        <div class="block-summary flex flex-col gap-6 lg:gap-8">
+                            <div class="fields flex flex-col gap-6 lg:gap-8">
+                                <!-- Promo Code -->
+                                <div class="promo-code flex flex-col gap-2">
+                                    <label class="text-sm text-[#545454] font-medium leading-4">Discount code / Promo
+                                        code</label>
+                                    <input type="text" class=" pl-4 py-4 border-[0.5px] border-[#9F9F9F] rounded-[7px]"
+                                        name="discount-code" id="discount-code" placeholder=" Code ">
+                                </div>
+                                <!-- Bonus Card -->
+                                <div class="bonus-card flex flex-col gap-2">
+                                    <label class="text-sm text-[#545454] font-medium leading-4">Your bonus card
+                                        number</label>
+                                    <div class="relative ">
+                                        <input type="text" name="bonus-card" id="bonus-card"
+                                            placeholder="Enter Card Number "
+                                            class=" w-full px-4 py-4 rounded-[7px] border-[0.5px] border-[#9F9F9F]">
+                                        <button type="button"
+                                            class="apply-button absolute  right-4 top-1/2 -translate-y-1/2 border border-primary-black rounded-md px-6 py-2  flex items-center gap-2 text-[12px] font-medium leading-4 hover:bg-primary-black hover:text-primary-white transition-colors duration-200">
+                                            Apply
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="prices flex flex-col gap-4">
+                                <div class="subtotal flex  justify-between">
+                                    <span class="text-base font-medium leading-6 tracking-[3%]">Subtotal</span>
+                                    <span class="text-base font-medium leading-8 tracking-[3%]">$2347</span>
+                                </div>
+
+                                <div class="taxes flex flex-col gap-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-base text-[#545454] font-normal leading-8 ">Estimated
+                                            Tax</span>
+                                        <span class="text-base font-medium leading-8 tracking-[3%]">$50</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-base text-[#545454] font-normal leading-8">Estimated shipping
+                                            & Handling</span>
+                                        <span class="text-base font-medium leading-8 tracking-[3%]">$29</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="total flex justify-between ">
+                                    <span class="text-base font-medium leading-8 tracking-[3%]">Total</span>
+                                    <span class="text-base font-medium leading-8 tracking-[3%]"> $2426 </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button"
+                            class="w-full py-4 px-14 text-base font-medium leading-6  rounded-md bg-primary-black text-primary-white hover:bg-primary-white hover:text-primary-black transition-colors duration-200">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+        </section>
     </main>
 
 
